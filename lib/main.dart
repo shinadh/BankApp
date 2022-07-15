@@ -26,12 +26,18 @@ class _BankHomeState extends State<BankHome> {
         // leading: Icon(Icons.menu),
         title: Center(
             child: Text(
-          "Welcome Shinadh!",
+          "Welcome back SHINADH!",
+          style: GoogleFonts.openSans(
+            fontWeight: FontWeight.bold,
+          ),
         )),
         actions: [
           Padding(
             padding: const EdgeInsets.all(10.0),
-            child: Icon(Icons.qr_code_scanner_outlined),
+            child: Icon(
+              Icons.qr_code_scanner_outlined,
+              size: 35,
+            ),
           ),
         ],
       ),
@@ -415,6 +421,39 @@ class _BankHomeState extends State<BankHome> {
               ],
             ),
           ),
+          SizedBox(
+            height: 10,
+          ),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: Icon(
+                  Icons.workspaces_rounded,
+                  color: Colors.blue,
+                  size: 35,
+                ),
+              ),
+              SizedBox(width: 10),
+              Text(
+                'LAST TRANSACTIONS',
+                style: GoogleFonts.openSans(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
+          // ListView(
+          //   children: [
+          //     ListTile(
+          //       leading: Container(
+          //         color: Colors.blue,
+          //         width: 5,
+          //       ),
+          //     )
+          //   ],
+          // ),
         ],
       ),
     );
